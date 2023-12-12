@@ -1,0 +1,99 @@
+Java 
+  Java is object oriented programming language
+  platform independent
+  High level programming language
+
+  Cross platform application
+  server side, Dynamic web application
+  web application development
+
+Class:
+ A class is a group object which have common properties,
+ It is blueprint or template from which object are created
+ it can contain field,methods, constructor and block of code.
+
+syntax for Class:
+ public class FirstProgram{
+   -------------
+}
+here
+   public -- Access modifier
+   class  -- keyword
+   FirstProgram -- class name
+
+Object:
+ An instance of class is called object
+ Object is real world entity or real time entity.
+
+Syntax for object Creation:
+  ClassName objectName=new ClassName();
+
+
+Maven Project:
+ src/main/java --> dev team
+ src/test/java -->tester
+
+Other than .java files, xlsx, .properties, cofig.properties
+ src/main/resource
+ src/test/resource
+
+Create a new package:
+ right click on src/main/java
+      ---> hover on new options
+            ---> click on package
+               ---> enter your package name (it should be lowercase)
+                  ---> click on ok
+
+Create a new Class:
+ right click on src/main/java
+      ---> hover on new options
+            ---> click on class
+               ---> enter your class name (pascal notation)
+                  ---> click on ok
+
+
+
+
+main Method:
+
+public static void main(String[] args){
+
+------------
+
+}
+
+Explain main methods?
+
+	Main() method is the entry point of any standalone java application. The syntax of main method ispublic static void main(String args[]). Main method is public and static so that java can access it without initializing the class. The input parameter is an array of String through which we can pass runtime arguments to the java program. 
+
+public : Public is an access modifier, which is used to specify who can access this method. Public means that this Method will be accessible by any Class.
+
+static : It is a keyword in java which identifies it is class based i.e it can be accessed without creating the instance of a Class.
+
+void : It is the return type of the method. Void defines the method which will not return any value.
+
+main: It is the name of the method which is searched by JVM as a starting point for an application with a particular signature only. It is the method where the main execution occu.
+
+String args[] : It is the parameter passed to the main method.
+
+
+
+
+
+Methods:
+========
+
+
+Actions 
+
+Syntax:
+-------
+public void methodName(arguments if needed ){
+
+
+}
+
+public --> AccessModifier
+void   --> return null
+methodName--> name of the method
+() --->  Paranthesis
