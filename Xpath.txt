@@ -1,0 +1,89 @@
+Xpath--->XML Path --> Extensible Markup Language
+
+Absolute xpath            Relative Xpath
+Starting from root node Starting from current node  Start with single(/)slash Start with double(//)slash
+  
+
+
+
+Xpath:
+1.Attribute based xpath:
+//tagName[@attributeName='attributeValue']
+
+2.Text based xpath
+//tagName[text()='textValue']
+
+3.Contains based or partial xpath:
+//tagName[contains(@attribute,'partialValue')]
+//tagName[contains(text(),'partialTextValue')]
+
+4.Collections or Index based xpath
+(//tagName[@attributeName='attributeValue'])[1]
+(//tagName[text()='textValue'])[1]
+
+
+Axes xpath:
+Parent to child xpath:
+parent xpath/ child tagName or xpath
+//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a
+
+If it is more than one matches we should use index
+(//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a)[1]
+
+Child to parent
+child xpath/parent::tagName of the parent tag
+//input[@id='name']/parent::label
+     or
+//input[@id='name']/..
+GrandParent to GrandChild:
+GrandParent xpath// grandchild tagName or xpath
+//form[@id='login']//label[text()='Username']
+
+GrandChild to GrandParent:
+GrandChild xpath//ancestor::tag name of the grand parent tag
+//label[text()='Username']/ancestor::form
+//label[text()='Username']/../..
+
+
+Elder sibling xpath to younger sibling
+Elder sibling xpath/following-sibling:: younger sibling xpath
+//label[text()='Username']/following-sibling::input
+
+Younger sibling to Elder sibling\
+Younger sibling xapth /preceding-sibling::tag name  elder sibling 
+//input[@id='username']/preceding-sibling::label
+
+Elder cousin xpath to younger cousin
+Elder cousin xpath/following:: tagname of younger cousin 
+//label[text()='Username']/following::input
+(//span[text()='From Lead']/following::img)[1]
+
+
+
+Younger cousin to Elder cousin
+younger cousin xpath /preceding::tag name of elsder cousin
+//input[@class='decorativeSubmit']/preceding::input
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
